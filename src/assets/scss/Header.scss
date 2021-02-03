@@ -1,0 +1,40 @@
+.header {
+    @include box-content();
+    border-bottom: 1px solid #282c34;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    .logo-gallant {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.logo {
+    margin: 15px 0 0 0;
+    max-height: 45px;
+    max-width: 45px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
